@@ -50,13 +50,13 @@ class AdminFolderWidget(ForeignKeyRawIdWidget):
             (u'<a href="%s%s" class="related-lookup" id="lookup_id_%s"' + \
              u'onclick="return showRelatedObjectLookupPopup(this);"> ') % \
                 (related_url, url, name))
-        output.append(('<img src="%simg/admin/selector-search.gif" ' +\
+        output.append(('<img src="%sadmin/img/selector-search.gif" ' +\
                        'width="16" height="16" alt="%s" /></a>') % (
                                     settings.ADMIN_MEDIA_PREFIX, _('Lookup')))
         output.append('</br>')
         clearid = '%s_clear' % css_id
         output.append(
-            (u'<img id="%s" src="%simg/admin/icon_deletelink.gif" ' +\
+            (u'<img id="%s" src="%sadmin/img/icon_deletelink.gif" ' +\
              u'width="10" height="10" alt="%s" title="%s"/>') % (
                             clearid, settings.ADMIN_MEDIA_PREFIX,
                             _('Clear'), _('Clear')))
